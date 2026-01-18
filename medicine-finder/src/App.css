@@ -1,33 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #FFF5E6 0%, #FFE4CC 100%);
+  color: #333;
+}
+
 .App {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #FFF5E6 0%, #FFE4CC 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main content area */
+.app-container {
+  display: flex;
+  flex: 1;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Warm Luxury Color Scheme */
+:root {
+  --primary-color: #D4824C;
+  --secondary-color: #B85D3D;
+  --accent-color: #8B6239;
+  --light-bg: #FFE4CC;
+  --light-text: #FFF5E6;
+  --text-dark: #333;
+  --border-color: #D4824C;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100% !important;
+    max-width: none !important;
+  }
+  
+  .main-content {
+    flex: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  
+  .App {
+    min-height: auto;
+  }
 }
-
-.App-link {
-  color: #61dafb;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
