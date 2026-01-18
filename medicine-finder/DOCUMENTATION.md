@@ -1,8 +1,9 @@
 # Medicine Finder - Complete Documentation
 
 **Last Updated:** January 18, 2026  
-**Version:** 1.0.0  
-**Status:** Active & Running
+**Version:** 1.1.0  
+**Status:** Active & Running  
+**Latest Update:** Added comprehensive medicines database for Cold, Cough, and Fever
 
 ---
 
@@ -191,7 +192,8 @@ medicine-finder/
 │   │   └── AuthContext.js      # Authentication context
 │   │
 │   ├── data/                   # Static data
-│   │   └── medicines.js        # Medicines database
+│   │   ├── medicines.js        # Basic medicines database
+│   │   └── medicinesDatabase.json  # Comprehensive medicines DB (NEW)
 │   │
 │   ├── App.js                  # Main app component
 │   ├── App.css                 # Global app styling
@@ -204,9 +206,17 @@ medicine-finder/
 ├── package.json                # Project dependencies & scripts
 ├── package-lock.json           # Dependency lock file
 ├── README.md                   # Quick start guide
-├── DOCUMENTATION.md            # This file
+├── SETUP_GUIDE.md              # Quick setup reference
+├── DOCUMENTATION.md            # This file (main documentation)
+├── API_REFERENCE.md            # Technical API reference
+├── ARCHITECTURE.md             # System architecture
+├── DOCS_SUMMARY.md             # Documentation overview
+├── INDEX.md                    # Documentation index
+├── FINAL_SUMMARY.md            # Project summary
+├── VERIFICATION_CHECKLIST.md   # Quality verification
 └── .env                        # Environment variables (if needed)
 ```
+
 
 ---
 
@@ -579,8 +589,9 @@ Start
 
 ## Data Management
 
-### Medicines Database
+### Medicines Database Files
 
+#### 1. Basic Medicines Database
 **File:** `src/data/medicines.js`
 
 **Structure:**
@@ -599,34 +610,146 @@ Start
 }
 ```
 
+**Total Medicines:** 10 general medicines
+
+#### 2. Comprehensive Medicines Database (NEW)
+**File:** `src/data/medicinesDatabase.json`
+
+**New Feature:** Comprehensive JSON database for specific conditions (Cold, Cough, Fever)
+
+**Structure:**
+```json
+{
+  "medicines": [
+    {
+      "id": number,
+      "condition": string,              // e.g., "Cold", "Cough", "Fever"
+      "genericName": string,            // Active drug
+      "formula": string,                // Chemical formula (e.g., "C17H19ClN2O")
+      "molecularWeight": number,        // Molecular weight
+      "category": string,               // Drug category (Antihistamine, Analgesic, etc.)
+      "description": string,            // Detailed description
+      "products": [
+        {
+          "brandName": string,          // Brand/Product name
+          "company": string,            // Pharmaceutical company
+          "strength": string,           // Dosage strength
+          "form": string,               // Form (Tablet, Syrup, Inhaler, etc.)
+          "dosage": string,             // Dosage instructions
+          "price": number,              // Price in rupees
+          "sideEffects": string[]       // List of side effects
+        }
+      ]
+    }
+  ]
+}
+```
+
 ### Sample Data
 
-**Total Medicines:** 10
+**Total Generic Drugs:** 10 conditions covered
 
-| ID | Name | Company | Symptoms | Dosage | Price |
-|----|------|---------|----------|--------|-------|
-| 1 | Aspirin | Bayer | Headache, Fever, Pain | 500mg | $5-10 |
-| 2 | Ibuprofen | Advil | Headache, Fever, Pain, Inflammation | 200mg | $6-12 |
-| 3 | Paracetamol | Calpol | Fever, Headache, Pain | 500mg | $4-8 |
-| 4 | Amoxicillin | GSK | Bacterial Infection, Throat Infection | 500mg | $10-20 |
-| 5 | Cetirizine | Cipla | Allergy, Itching, Runny Nose | 10mg | $8-15 |
-| 6 | Omeprazole | Astra Zeneca | Acid Reflux, GERD, Stomach Ulcer | 20mg | $12-25 |
-| 7 | Metformin | Merck | Diabetes, High Blood Sugar | 500mg | $15-30 |
-| 8 | Lisinopril | AstraZeneca | High Blood Pressure, Heart Failure | 10mg | $20-40 |
-| 9 | Simvastatin | Merck | High Cholesterol, Heart Disease Risk | 20mg | $18-35 |
-| 10 | Loratadine | Cipla | Allergy, Hay Fever, Hives | 10mg | $7-14 |
+**Conditions:**
+1. **Cold** - 3 generic drugs with 10+ products
+2. **Cough** - 3 generic drugs with 12+ products  
+3. **Fever** - 4 generic drugs with 17+ products
 
-**Companies:** Bayer, Advil, Calpol, GSK, Cipla, Astra Zeneca, Merck, AstraZeneca
+**Cold Medicines:**
+| Generic Drug | Products | Companies |
+|--------------|----------|-----------|
+| Cetirizine | Cetrizine HCL, Virgo, Allercet, Zetcet | Cipla, GSK, Sun Pharma, Zydus |
+| Phenylephrine | Nasal Plus, Phenyle, Decongestion | Himalaya, Abbott, Mankind |
+| Vitamin C | Celin, Lypo-Spheric, Vit C Plus | Cipla, Merck, Abbott |
 
-**Symptoms:** 20+ including Fever, Headache, Pain, Allergy, Inflammation, etc.
+**Cough Medicines:**
+| Generic Drug | Products | Companies |
+|--------------|----------|-----------|
+| Dextromethorphan | Robitussin, Coughfree, Tussin | Pfizer, Cipla, Dr. Reddy's |
+| Ambroxol | Mucosolvan, Ambrolite, Amoxy, Ambrox | BI, Cipla, Sun Pharma, Lupin |
+| Salbutamol | Asthalin, Ventolin, Salbuvent | Cipla, GSK, Abbott |
+
+**Fever Medicines:**
+| Generic Drug | Products | Companies |
+|--------------|----------|-----------|
+| Paracetamol | Crocin, Dolo 650, Paracet, Tylenol, Acimol, Paracip | GSK, Micro Labs, Cipla, McNeil, Mankind, Sun Pharma |
+| Ibuprofen | Brufen, Ibugesic, Combiflam, Ibufill, Advil | Abbott, Cipla, GlaxoSmithKline, Wyeth |
+| Aspirin | Aspirin 500, Ecosprin, Aspirin Plus | Bayer, USV, Abbott |
+| Nimesulide | Nise, Nimulid, Nimsulid, Nimesil | Cipla, Dr. Reddy's, Sun Pharma, Abbott |
+
+### Key Features of New Database
+
+✅ **Chemical Information** - Formulas and molecular weights  
+✅ **Multiple Products** - Up to 6+ brands per generic drug  
+✅ **Company Details** - Multiple manufacturers for each drug  
+✅ **Comprehensive Dosages** - Different forms (tablets, syrups, inhalers)  
+✅ **Side Effects** - Detailed list of side effects per product  
+✅ **Pricing** - Individual product pricing  
+✅ **Drug Categories** - Classification by drug type  
 
 ### Data Updates
 
 To add new medicines:
-1. Edit `src/data/medicines.js`
-2. Add to `medicinesData` array
-3. Save and React hot-reloads
-4. (Future: Connect to backend database)
+
+**Option 1: Quick Update (medicines.js)**
+```javascript
+// src/data/medicines.js
+export const medicinesData = [
+  {
+    id: 11,
+    name: "New Medicine",
+    company: "Company Name",
+    genericName: "Generic Name",
+    symptoms: ["Symptom1", "Symptom2"],
+    // ... other fields
+  }
+];
+```
+
+**Option 2: Comprehensive Update (medicinesDatabase.json)**
+```json
+// src/data/medicinesDatabase.json
+{
+  "medicines": [
+    {
+      "condition": "Condition Name",
+      "genericName": "Generic Name",
+      "formula": "C10H20O5",
+      "products": [
+        {
+          "brandName": "Brand Name",
+          "company": "Company"
+          // ... other fields
+        }
+      ]
+    }
+  ]
+}
+```
+
+### Using the New Database in Components
+
+```javascript
+import medicinesDB from '../data/medicinesDatabase.json';
+
+// Filter by condition
+const coldMedicines = medicinesDB.medicines.filter(m => m.condition === 'Cold');
+
+// Get all products for a generic drug
+const paracetamolProducts = medicinesDB.medicines
+  .find(m => m.genericName === 'Paracetamol')
+  .products;
+
+// Get cheapest option
+const cheapestProduct = paracetamolProducts
+  .reduce((prev, current) => (prev.price < current.price) ? prev : current);
+```
+
+### Future Enhancement
+
+- (Planned Phase 2) Connect to backend database
+- (Planned) Real-time data updates
+- (Planned) Advanced search with filters
+- (Planned) Drug interaction checker
 
 ---
 

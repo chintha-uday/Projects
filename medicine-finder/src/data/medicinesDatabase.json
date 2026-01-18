@@ -1,0 +1,456 @@
+{
+  "medicines": [
+    {
+      "id": 1,
+      "condition": "Cold",
+      "genericName": "Cetirizine",
+      "formula": "C17H19ClN2O",
+      "molecularWeight": 388.306,
+      "category": "Antihistamine",
+      "description": "H1-receptor antagonist used to treat allergies and cold symptoms",
+      "products": [
+        {
+          "brandName": "Cetrizine HCL",
+          "company": "Cipla",
+          "strength": "10mg",
+          "form": "Tablet",
+          "dosage": "1 tablet once daily",
+          "price": 45,
+          "sideEffects": ["Drowsiness", "Dry mouth", "Headache"]
+        },
+        {
+          "brandName": "Virgo",
+          "company": "GlaxoSmithKline",
+          "strength": "10mg",
+          "form": "Tablet",
+          "dosage": "1 tablet once daily",
+          "price": 55,
+          "sideEffects": ["Drowsiness", "Dry mouth"]
+        },
+        {
+          "brandName": "Allercet",
+          "company": "Sun Pharma",
+          "strength": "10mg",
+          "form": "Tablet",
+          "dosage": "1 tablet once daily",
+          "price": 40,
+          "sideEffects": ["Drowsiness", "Headache"]
+        },
+        {
+          "brandName": "Zetcet",
+          "company": "Zydus Cadila",
+          "strength": "10mg",
+          "form": "Syrup (1mg/ml)",
+          "dosage": "10ml once daily",
+          "price": 50,
+          "sideEffects": ["Drowsiness", "Dry mouth"]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "condition": "Cold",
+      "genericName": "Phenylephrine",
+      "formula": "C9H13NO2",
+      "molecularWeight": 167.205,
+      "category": "Decongestant",
+      "description": "Sympathomimetic amine used as a nasal decongestant",
+      "products": [
+        {
+          "brandName": "Nasal Plus",
+          "company": "Himalaya",
+          "strength": "10mg",
+          "form": "Tablet",
+          "dosage": "1 tablet twice daily",
+          "price": 35,
+          "sideEffects": ["Nervousness", "Insomnia", "Headache"]
+        },
+        {
+          "brandName": "Phenyle",
+          "company": "Abbott",
+          "strength": "10mg",
+          "form": "Tablet",
+          "dosage": "1 tablet twice daily",
+          "price": 45,
+          "sideEffects": ["Nervousness", "Tremor"]
+        },
+        {
+          "brandName": "Decongestion",
+          "company": "Mankind",
+          "strength": "0.5% Nasal spray",
+          "form": "Nasal Spray",
+          "dosage": "1-2 sprays per nostril every 4 hours",
+          "price": 60,
+          "sideEffects": ["Nasal irritation", "Rebound congestion"]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "condition": "Cough",
+      "genericName": "Dextromethorphan",
+      "formula": "C18H25NO",
+      "molecularWeight": 271.406,
+      "category": "Antitussive",
+      "description": "Non-narcotic cough suppressant that acts on the cough center in the brain",
+      "products": [
+        {
+          "brandName": "Robitussin",
+          "company": "Pfizer",
+          "strength": "10mg/5ml",
+          "form": "Syrup",
+          "dosage": "10ml every 4-6 hours",
+          "price": 65,
+          "sideEffects": ["Drowsiness", "Dizziness", "Nausea"]
+        },
+        {
+          "brandName": "Coughfree",
+          "company": "Cipla",
+          "strength": "10mg/5ml",
+          "form": "Syrup",
+          "dosage": "10ml every 4-6 hours",
+          "price": 55,
+          "sideEffects": ["Drowsiness", "Nausea"]
+        },
+        {
+          "brandName": "Tussin",
+          "company": "Dr. Reddy's",
+          "strength": "15mg",
+          "form": "Tablet",
+          "dosage": "1 tablet every 4-6 hours",
+          "price": 50,
+          "sideEffects": ["Drowsiness", "Dizziness"]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "condition": "Cough",
+      "genericName": "Ambroxol",
+      "formula": "C13H18BrNO",
+      "molecularWeight": 282.189,
+      "category": "Mucolytic/Expectorant",
+      "description": "Metabolite of bromhexine that facilitates expectoration of sputum",
+      "products": [
+        {
+          "brandName": "Mucosolvan",
+          "company": "Boehringer Ingelheim",
+          "strength": "30mg",
+          "form": "Tablet",
+          "dosage": "1 tablet three times daily",
+          "price": 75,
+          "sideEffects": ["Nausea", "Vomiting", "Diarrhea"]
+        },
+        {
+          "brandName": "Ambrolite",
+          "company": "Cipla",
+          "strength": "30mg",
+          "form": "Tablet",
+          "dosage": "1 tablet three times daily",
+          "price": 55,
+          "sideEffects": ["Nausea", "Diarrhea"]
+        },
+        {
+          "brandName": "Amoxy",
+          "company": "Sun Pharma",
+          "strength": "15mg/5ml",
+          "form": "Syrup",
+          "dosage": "10ml three times daily",
+          "price": 60,
+          "sideEffects": ["Nausea", "Stomach discomfort"]
+        },
+        {
+          "brandName": "Ambrox",
+          "company": "Lupin",
+          "strength": "30mg",
+          "form": "Tablet",
+          "dosage": "1 tablet three times daily",
+          "price": 65,
+          "sideEffects": ["Nausea", "Diarrhea", "Vomiting"]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "condition": "Cough",
+      "genericName": "Salbutamol (Albuterol)",
+      "formula": "C13H21NO3",
+      "molecularWeight": 239.318,
+      "category": "Beta-2 Agonist",
+      "description": "Selective beta-2 adrenergic receptor agonist used in cough relief",
+      "products": [
+        {
+          "brandName": "Asthalin",
+          "company": "Cipla",
+          "strength": "100 mcg",
+          "form": "Inhaler",
+          "dosage": "1-2 puffs every 4-6 hours",
+          "price": 95,
+          "sideEffects": ["Tremor", "Tachycardia", "Headache"]
+        },
+        {
+          "brandName": "Ventolin",
+          "company": "GlaxoSmithKline",
+          "strength": "100 mcg",
+          "form": "Inhaler",
+          "dosage": "1-2 puffs every 4-6 hours",
+          "price": 110,
+          "sideEffects": ["Tremor", "Nervousness"]
+        },
+        {
+          "brandName": "Salbuvent",
+          "company": "Abbott",
+          "strength": "4mg",
+          "form": "Tablet",
+          "dosage": "1 tablet three times daily",
+          "price": 85,
+          "sideEffects": ["Tremor", "Headache", "Tachycardia"]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "condition": "Fever",
+      "genericName": "Paracetamol (Acetaminophen)",
+      "formula": "C8H9NO2",
+      "molecularWeight": 151.163,
+      "category": "Analgesic/Antipyretic",
+      "description": "Pain reliever and fever reducer that works by raising the pain threshold",
+      "products": [
+        {
+          "brandName": "Crocin",
+          "company": "GlaxoSmithKline",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 20,
+          "sideEffects": ["Nausea", "Liver damage (overdose)", "Skin rashes"]
+        },
+        {
+          "brandName": "Dolo 650",
+          "company": "Micro Labs",
+          "strength": "650mg",
+          "form": "Tablet",
+          "dosage": "1 tablet every 4-6 hours",
+          "price": 18,
+          "sideEffects": ["Nausea", "Allergic reactions"]
+        },
+        {
+          "brandName": "Paracet",
+          "company": "Cipla",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 15,
+          "sideEffects": ["Nausea", "Rash"]
+        },
+        {
+          "brandName": "Tylenol",
+          "company": "McNeil",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 35,
+          "sideEffects": ["Nausea", "Liver damage"]
+        },
+        {
+          "brandName": "Acimol",
+          "company": "Mankind",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 22,
+          "sideEffects": ["Nausea", "Allergic reactions"]
+        },
+        {
+          "brandName": "Paracip",
+          "company": "Sun Pharma",
+          "strength": "650mg",
+          "form": "Tablet",
+          "dosage": "1 tablet every 4-6 hours",
+          "price": 20,
+          "sideEffects": ["Nausea", "Rash"]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "condition": "Fever",
+      "genericName": "Ibuprofen",
+      "formula": "C13H18O2",
+      "molecularWeight": 206.282,
+      "category": "NSAID (Non-steroidal anti-inflammatory drug)",
+      "description": "NSAID used to reduce fever and relieve pain by inhibiting prostaglandin synthesis",
+      "products": [
+        {
+          "brandName": "Brufen",
+          "company": "Abbott",
+          "strength": "400mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 38,
+          "sideEffects": ["Stomach pain", "Nausea", "Heartburn"]
+        },
+        {
+          "brandName": "Ibugesic",
+          "company": "Cipla",
+          "strength": "400mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 32,
+          "sideEffects": ["Stomach upset", "Nausea"]
+        },
+        {
+          "brandName": "Combiflam",
+          "company": "Cipla",
+          "strength": "400mg Ibuprofen + 25mg Paracetamol",
+          "form": "Tablet",
+          "dosage": "1 tablet every 4-6 hours",
+          "price": 45,
+          "sideEffects": ["Stomach pain", "Nausea", "Dizziness"]
+        },
+        {
+          "brandName": "Ibufill",
+          "company": "GlaxoSmithKline",
+          "strength": "200mg",
+          "form": "Syrup (100mg/5ml)",
+          "dosage": "10ml every 4-6 hours",
+          "price": 42,
+          "sideEffects": ["Stomach upset", "Nausea"]
+        },
+        {
+          "brandName": "Advil",
+          "company": "Wyeth",
+          "strength": "400mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 50,
+          "sideEffects": ["Stomach pain", "Heartburn", "Nausea"]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "condition": "Fever",
+      "genericName": "Aspirin",
+      "formula": "C9H8O4",
+      "molecularWeight": 180.157,
+      "category": "NSAID/Analgesic",
+      "description": "Salicylate compound used for pain relief, fever reduction, and anti-inflammation",
+      "products": [
+        {
+          "brandName": "Aspirin 500",
+          "company": "Bayer",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 25,
+          "sideEffects": ["Stomach irritation", "Bleeding risk", "Allergic reactions"]
+        },
+        {
+          "brandName": "Ecosprin",
+          "company": "USV",
+          "strength": "75mg",
+          "form": "Tablet",
+          "dosage": "1 tablet daily",
+          "price": 15,
+          "sideEffects": ["Stomach upset", "Bleeding risk"]
+        },
+        {
+          "brandName": "Aspirin Plus",
+          "company": "Abbott",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets every 4-6 hours",
+          "price": 28,
+          "sideEffects": ["Stomach irritation", "Nausea"]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "condition": "Fever",
+      "genericName": "Nimesulide",
+      "formula": "C13H12N2O3S",
+      "molecularWeight": 308.32,
+      "category": "NSAID",
+      "description": "Selective COX-2 inhibitor NSAID with analgesic and antipyretic properties",
+      "products": [
+        {
+          "brandName": "Nise",
+          "company": "Cipla",
+          "strength": "100mg",
+          "form": "Tablet",
+          "dosage": "1 tablet twice daily",
+          "price": 35,
+          "sideEffects": ["Stomach pain", "Nausea", "Dizziness"]
+        },
+        {
+          "brandName": "Nimulid",
+          "company": "Dr. Reddy's",
+          "strength": "100mg",
+          "form": "Tablet",
+          "dosage": "1 tablet twice daily",
+          "price": 40,
+          "sideEffects": ["Stomach upset", "Headache"]
+        },
+        {
+          "brandName": "Nimsulid",
+          "company": "Sun Pharma",
+          "strength": "100mg",
+          "form": "Tablet",
+          "dosage": "1 tablet twice daily",
+          "price": 32,
+          "sideEffects": ["Nausea", "Stomach pain"]
+        },
+        {
+          "brandName": "Nimesil",
+          "company": "Abbott",
+          "strength": "100mg",
+          "form": "Powder Sachet",
+          "dosage": "1 sachet twice daily with water",
+          "price": 45,
+          "sideEffects": ["Stomach upset", "Nausea", "Headache"]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "condition": "Cold",
+      "genericName": "Vitamin C (Ascorbic Acid)",
+      "formula": "C6H8O6",
+      "molecularWeight": 176.124,
+      "category": "Vitamin/Supplement",
+      "description": "Water-soluble vitamin used to support immune system and reduce cold duration",
+      "products": [
+        {
+          "brandName": "Celin",
+          "company": "Cipla",
+          "strength": "500mg",
+          "form": "Tablet",
+          "dosage": "1-2 tablets daily",
+          "price": 30,
+          "sideEffects": ["Kidney stones (high doses)", "Diarrhea", "Nausea"]
+        },
+        {
+          "brandName": "Lypo-Spheric",
+          "company": "Merck",
+          "strength": "1000mg",
+          "form": "Sachet",
+          "dosage": "1 sachet daily",
+          "price": 60,
+          "sideEffects": ["Diarrhea", "Nausea"]
+        },
+        {
+          "brandName": "Vit C Plus",
+          "company": "Abbott",
+          "strength": "500mg",
+          "form": "Effervescent Tablet",
+          "dosage": "1 tablet daily with water",
+          "price": 35,
+          "sideEffects": ["Diarrhea", "Nausea"]
+        }
+      ]
+    }
+  ]
+}
