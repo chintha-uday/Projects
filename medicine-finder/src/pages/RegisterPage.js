@@ -16,6 +16,16 @@ const RegisterPage = () => {
     e.preventDefault();
     setError('');
 
+    if (!name.trim()) {
+      setError('Full name is required');
+      return;
+    }
+
+    if (!email.trim()) {
+      setError('Email is required');
+      return;
+    }
+
     if (password !== confirmPassword) {
       setError('Passwords do not match');
       return;
@@ -29,7 +39,7 @@ const RegisterPage = () => {
     if (register(email, password, name)) {
       navigate('/dashboard');
     } else {
-      setError('Registration failed. Please try again.');
+      setError('Email already registered. Please use a different email or login.');
     }
   };
 

@@ -16,7 +16,7 @@ const LoginPage = () => {
     if (login(email, password, userType)) {
       navigate('/dashboard');
     } else {
-      setError('Invalid credentials. Try admin@medicine.com / admin123 or any doctor email');
+      setError('Invalid credentials. Please try again.');
     }
   };
 
@@ -102,11 +102,6 @@ const LoginPage = () => {
               Register here
             </span>
           </p>
-          <div className="test-credentials">
-            <p><strong>Test Credentials:</strong></p>
-            <p>Admin: admin@medicine.com / admin123</p>
-            <p>Doctor: any email / password (6+ chars)</p>
-          </div>
         </div>
       </div>
     </div>

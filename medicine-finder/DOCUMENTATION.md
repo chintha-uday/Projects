@@ -5,6 +5,8 @@
 **Status:** Active & Running  
 **Latest Update:** Added comprehensive medicines database for Cold, Cough, and Fever
 
+⚠️ **Important:** See [DEVELOPMENT_WORKFLOW.md](./DEVELOPMENT_WORKFLOW.md) for automatic documentation guidelines for all code changes.
+
 ---
 
 ## Table of Contents
@@ -23,10 +25,12 @@
 12. [Deployment](#deployment)
 13. [Troubleshooting](#troubleshooting)
 14. [Future Enhancements](#future-enhancements)
+15. [Development Workflow & Auto-Documentation](./DEVELOPMENT_WORKFLOW.md)
 
 ---
 
 ## Project Overview
+
 
 ### What is Medicine Finder?
 
