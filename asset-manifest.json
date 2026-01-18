@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Projects/medicine-finder/static/css/main.f4fa5fea.css",
+    "main.js": "/Projects/medicine-finder/static/js/main.fa2d680d.js",
+    "static/js/453.6f12c3c3.chunk.js": "/Projects/medicine-finder/static/js/453.6f12c3c3.chunk.js",
+    "index.html": "/Projects/medicine-finder/index.html",
+    "main.f4fa5fea.css.map": "/Projects/medicine-finder/static/css/main.f4fa5fea.css.map",
+    "main.fa2d680d.js.map": "/Projects/medicine-finder/static/js/main.fa2d680d.js.map",
+    "453.6f12c3c3.chunk.js.map": "/Projects/medicine-finder/static/js/453.6f12c3c3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f4fa5fea.css",
+    "static/js/main.fa2d680d.js"
+  ]
+}
