@@ -1,0 +1,95 @@
+.header {
+  background: linear-gradient(135deg, #D4824C 0%, #B85D3D 100%);
+  color: white;
+  padding: 1rem 0;
+  box-shadow: 0 4px 15px rgba(212, 130, 76, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.logo h1:hover {
+  transform: scale(1.05);
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.user-info {
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.nav-btn {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.nav-btn:hover {
+  background: white;
+  color: #D4824C;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: rgba(255, 100, 100, 0.3);
+  border-color: #FF6464;
+}
+
+.logout-btn:hover {
+  background: #FF6464;
+  color: white;
+}
+
+.signup-btn {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 0 1rem;
+  }
+
+  .logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}

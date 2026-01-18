@@ -1,0 +1,205 @@
+.medicine-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 12px rgba(212, 130, 76, 0.15);
+  transition: all 0.3s ease;
+  border-left: 4px solid #D4824C;
+}
+
+.medicine-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(212, 130, 76, 0.25);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #FFF5E6;
+}
+
+.card-header h3 {
+  color: #D4824C;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.badge {
+  background: linear-gradient(135deg, #FFE4CC 0%, #FFD9B3 100%);
+  color: #8B6239;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.card-body {
+  margin-bottom: 1rem;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #f5f5f5;
+  font-size: 0.95rem;
+}
+
+.info-row strong {
+  color: #666;
+  flex: 0 0 150px;
+}
+
+.info-row span {
+  color: #333;
+  font-weight: 500;
+}
+
+.price {
+  color: #D4824C;
+  font-weight: 700 !important;
+  font-size: 1.1rem;
+}
+
+.expanded-content {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 2px solid #FFF5E6;
+}
+
+.symptoms-section,
+.ingredients-section,
+.side-effects-section,
+.pharmacy-section {
+  margin: 1rem 0;
+}
+
+.symptoms-section h4,
+.ingredients-section h4,
+.side-effects-section h4,
+.pharmacy-section h4 {
+  color: #D4824C;
+  margin-bottom: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: linear-gradient(135deg, #FFE4CC 0%, #FFD9B3 100%);
+  color: #8B6239;
+  padding: 0.4rem 0.8rem;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.ingredients-section ul,
+.side-effects-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.ingredients-section li,
+.side-effects-section li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.ingredients-section li:before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #D4824C;
+  font-weight: bold;
+}
+
+.side-effects-section li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #FF6464;
+}
+
+.pharmacy-section p {
+  color: #555;
+  font-size: 0.95rem;
+  padding: 0.5rem;
+  background: #FFF5E6;
+  border-radius: 8px;
+  padding: 0.8rem;
+}
+
+.card-footer {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.expand-btn,
+.add-btn {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.expand-btn {
+  background: linear-gradient(135deg, #FFE4CC 0%, #FFD9B3 100%);
+  color: #8B6239;
+  border: 1px solid #D4824C;
+}
+
+.expand-btn:hover {
+  background: linear-gradient(135deg, #FFD9B3 0%, #FFC99A 100%);
+  transform: translateY(-2px);
+}
+
+.add-btn {
+  background: linear-gradient(135deg, #D4824C 0%, #B85D3D 100%);
+  color: white;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 130, 76, 0.4);
+}
+
+@media (max-width: 768px) {
+  .card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .medicine-card {
+    padding: 1rem;
+  }
+
+  .info-row {
+    flex-direction: column;
+  }
+
+  .info-row strong {
+    flex: none;
+  }
+
+  .card-footer {
+    gap: 0.5rem;
+  }
+}
