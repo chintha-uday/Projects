@@ -1,0 +1,13 @@
+# Medicine Finder
+
+A comprehensive application designed to help users quickly locate and identify medications based on symptoms, ingredients, or drug names.
+
+## Features
+
+- **Search by Symptom**: Find appropriate medications for specific health conditions
+- **Drug Information**: View detailed information about medicines, including dosage and side effects
+- **Ingredient Lookup**: Search medications by active ingredients
+- **Pharmacy Locator**: Find nearby pharmacies and check availability
+- **Drug Interactions**: Check potential interactions between multiple medications
+
+## Installation
