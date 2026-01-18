@@ -9,16 +9,12 @@ import RegisterPage from './pages/RegisterPage';
 import DashboardPage from './pages/DashboardPage';
 import AdminPage from './pages/AdminPage';
 
-// Protected Route Component
-const ProtectedRoute = ({ children, requiredRole = null }) => {
-  const { user, userType } = React.useContext(AuthContext);
+// Protected Route Component - Only for Admin pages
+const AdminRoute = ({ children }) => {
+  const { userType } = React.useContext(AuthContext);
 
-  if (!user) {
-    return <Navigate to="/login" />;
-  }
-
-  if (requiredRole && userType !== requiredRole) {
-    return <Navigate to="/dashboard" />;
+  if (userType !== 'admin') {
+    return <Navigate to="/" />;
   }
 
   return children;
@@ -29,25 +25,18 @@ function App() {
     <Router>
       <AuthProvider>
         <Routes>
+          <Route path="/" element={<DashboardPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route
-            path="/dashboard"
-            element={
-              <ProtectedRoute>
-                <DashboardPage />
-              </ProtectedRoute>
-            }
-          />
-          <Route
             path="/admin"
             element={
-              <ProtectedRoute requiredRole="admin">
+              <AdminRoute>
                 <AdminPage />
-              </ProtectedRoute>
+              </AdminRoute>
             }
           />
-          <Route path="/" element={<Navigate to="/login" />} />
         </Routes>
       </AuthProvider>
     </Router>

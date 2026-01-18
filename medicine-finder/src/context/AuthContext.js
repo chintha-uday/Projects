@@ -22,10 +22,13 @@ export const AuthProvider = ({ children }) => {
   const [userType, setUserType] = useState(null);
   const [users, setUsers] = useState([]);
 
-  // Initialize users on component mount
+  // Initialize users on component mount and auto-login as guest
   useEffect(() => {
     const initialUsers = initializeUsers();
     setUsers(initialUsers);
+    // Auto-login as guest so dashboard is accessible
+    setUser({ email: 'guest@example.com', name: 'Guest User' });
+    setUserType('guest');
   }, []);
 
   // Save users to localStorage
@@ -89,8 +92,9 @@ export const AuthProvider = ({ children }) => {
   };
 
   const logout = () => {
-    setUser(null);
-    setUserType(null);
+    // Reset to guest user instead of completely logging out
+    setUser({ email: 'guest@example.com', name: 'Guest User' });
+    setUserType('guest');
   };
 
   // Get all users (for admin purposes)
