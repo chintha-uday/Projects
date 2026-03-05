@@ -22,7 +22,7 @@ const AdminRoute = ({ children }) => {
 
 function App() {
   return (
-    <Router basename="/Projects/medicine-finder">
+    <Router>
       <AuthProvider>
         <Routes>
           <Route path="/" element={<DashboardPage />} />
