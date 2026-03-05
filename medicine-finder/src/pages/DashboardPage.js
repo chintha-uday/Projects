@@ -108,17 +108,7 @@ const DashboardPage = () => {
 
           <aside className="sidebar">
             <div className="sidebar-card">
-              <h3>💡 Quick Tips</h3>
-              <ul>
-                <li>Check side effects before taking</li>
-                <li>Consult doctor for interactions</li>
-                <li>Always verify pharmacy availability</li>
-                <li>Read dosage instructions carefully</li>
-              </ul>
-            </div>
-
-            <div className="sidebar-card">
-              <h3>📊 Popular Searches</h3>
+              <h3>� Popular Searches</h3>
               <div className="popular-tags">
                 {['Fever', 'Headache', 'Allergy', 'Pain', 'Infection'].map((tag, idx) => (
                   <button
@@ -130,6 +120,16 @@ const DashboardPage = () => {
                   </button>
                 ))}
               </div>
+            </div>
+
+            <div className="sidebar-card">
+              <h3>💡 Quick Tips</h3>
+              <ul>
+                <li>Check side effects before taking</li>
+                <li>Consult doctor for interactions</li>
+                <li>Always verify pharmacy availability</li>
+                <li>Read dosage instructions carefully</li>
+              </ul>
             </div>
 
             <div className="sidebar-card warning">
